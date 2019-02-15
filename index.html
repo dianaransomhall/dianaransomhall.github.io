@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Diana Hall</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Huy Le is a Software Developer. Alias: MicrowaveSam. I want to build cool stuff.">
+<meta name="author" content="Huy Le">
+<link rel="shortcut icon" href="images/logo.png">
+
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/equalizer.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!--Scaling script-->
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+    		var w = $(window).width();
+    		if(w > 320 && menu.is(':hidden')) {
+    			menu.removeAttr('style');
+    		}
+		});
+	});
+</script>
+
+<!--font-Awesome-->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!--font-Awesome-->
+
+</head>
+<body style="background: #222222;">
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+		<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a href="organizations.html" target="_blank">Organizations</a></li>
+				<li><a href="projects.html" target="_blank">Projects</a></li>
+				<li class="logo page-scroll"><a title="MicrowaveSam" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+				<li><a href="https://www.tumblr.com/blog/sfquantions" target="_blank">blog</a></li>
+				<li class="page-scroll"><a href="docs/CV_Diana_Hall.pdf" target="_blank">curricula vitae (cv)</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+
+<div class="main_bg"  id="about"><!-- start about us -->
+<div class="container">
+	<div class="row about">
+		<div class="col-md-7 about_text" style="float: none; margin: 0 auto;">
+			<h3>Diana Hall</h3>
+			<h4>Software for Science</h4>
+			<p>dianaransomhall@yahoo.com<br>
+			   I'm working with dataKind<br></br>
+			   
+			   I use data to look at the world.</p>
+
+			<div class="soc_icons navbar-right" style="margin-top: 5rem;">
+				<ul class="list-unstyled text-center">
+					<li><a href="https://github.com/dianaransomhall" target="_blank"><i class="fa fa-github-square"></i></a></li>
+					<li><a href="https://linkedin.com/in/diana-hall-26b1873b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>Made with <span id="heart">&hearts;</span> and templates.</a></span></p>
+				<p>dianaransomhall(at)yahoo(dot)com</p>
+				<div class="bar-c">
+					<div id="bar-1" class="bar"></div>
+					<div id="bar-2" class="bar"></div>
+					<div id="bar-3" class="bar"></div>
+					<div id="bar-4" class="bar"></div>
+					<div id="bar-5" class="bar"></div>
+					<div id="bar-6" class="bar"></div>
+				</div>
+				<audio id="background_audio" autoplay loop>
+					<source src="docs/bereuse.m4a" type="audio/mpeg">
+				</audio>
+				<br>
+				<a href="#noscroll" id="mute">Toggle music</a>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<!--Google Analytics script-->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-46691413-1', 'huyle.me');
+	ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="js/mute.js"></script>
+
+</body>
+</html>
